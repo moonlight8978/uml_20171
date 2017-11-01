@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Maya - CD Store Management</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="../node_modules/animate.css/animate.min.css">
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/app.css">
+
+</head>
+<body>
+  <div class="page-title animated fadeInDown">
+    <h4><a href="index.html">Team Maya - Quản lý cửa hàng băng đĩa</a></h4>
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
+      <li class="breadcrumb-item active">
+        Quản lý kho hàng
+      </li>
+    </ol>
+  </div>
+
+  <div class="body animated fadeIn">
+    <div class="box">
+      <table>
+        <tbody>
+          <tr>
+            <td colspan="2">
+              <strong>Tên ca sử dụng:</strong>Quản lý kho hàng
+            </td>
+            <td>
+              <strong>ID:</strong>2
+            </td>
+            <td>
+              <strong>Mức quan trọng:</strong>Cao
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="2">
+              <strong>Tác nhân chính:</strong>Quản trị viên, Người dùng
+            </td>
+            <td colspan="2">
+              <strong>Kiểu ca sử dụng:</strong>Quan trọng, chi tiết
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="4">
+              <strong>Các nhân tố và mối quan tâm:</strong>
+              <div>
+                Nhà quản trị cập nhật kho hàng<br>
+                Xuất hóa đơn cho người dùng
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="4">
+              <strong>Mô tả ngắn gọn:</strong>Kho hàng được cập nhật khi nhập hàng, bán hàng
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="4">
+              <strong>Kích hoạt:</strong>Quản trị viên, Người dùng đặt hàng
+              <br>
+              <strong>Kiểu:</strong>Ngoại
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="4">
+              <strong>Các mối quan hệ:</strong>
+              <br>
+              <ul>
+                <li>
+                  <strong>Liên quan:</strong>Quản trị viên, Người dùng
+                </li>
+                <li>
+                  <strong>Bao gồm:</strong><!-- TODO -->
+                </li>
+                <li>
+                  <strong>Mở rộng:</strong><!-- TODO -->
+                </li>
+                <li>
+                  <strong>Khái quát hóa:</strong><!-- TODO -->
+                </li>
+              </ul>
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="4">
+              <strong>Luồng sự kiện chính:</strong>
+              <ol>
+                <li>Tiếp nhận yêu cầu cập nhật kho hàng.</li>
+                <li>
+                  Tiến hành cập nhật kho hàng với số lượng yêu cầu.
+                  <ul>
+                    <li>Quản trị viên thêm sản phẩm mới: S-1</li>
+                    <li>Nếu quản trị viên nhập thêm / xả bớt hàng: S-2</li>
+                    <li>Nếu người dùng đặt hàng, admin xuất hóa đơn: S-3</li>
+                  </ul>
+                </li>
+                <li>Phản hồi trạng thái.</li>
+              </ol>
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="4">
+              <strong>Luồng sự kiện con:</strong>
+              <div>
+                S-1: Tạo kho mới
+                <ol>
+                  <li>Tạo kho cho sản phẩm tương ứng.</li>
+                  <li>Thiết lập các tham số mặc định.</li>
+                </ol>
+              </div>
+              <div class="">
+                S-2: Cập nhật kho cho 1 sản phẩm.
+              </div>
+              <div>
+                S-3: Cập nhật theo hóa đơn:
+                <ol>
+                  <li>Duyệt hóa đơn thu được mảng các sản phẩm kèm số lượng.</li>
+                  <li>Cập nhật từng sản phẩm.</li>
+                </ol>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="4">
+              <strong>Luồng sự kiện tương đương/ngoại lệ:</strong>
+              <div>
+                1a: Có thể xảy ra lỗi, hủy yêu cầu, báo lỗi.
+                <ol>
+                  <li>Cập nhật kho hàng của một sản phẩm không tồn tại.</li>
+                </ol>
+              </div>
+              <div>
+                2a: Có thể xảy ra lỗi:
+                <ol>
+                  <li>Hết hàng.</li>
+                </ol>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!-- END BOX -->
+
+    <div class="box mt-3">
+      <img src="../assets/manage_storage_sequence.jpg">
+    </div>
+
+    <div class="box mt-3">
+      <img src="../assets/manage_storage_state.jpg">
+    </div>
+  </div>
+  <!-- END BODY -->
+</body>
+</html>

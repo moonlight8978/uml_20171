@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Maya - CD Store Management</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="../node_modules/animate.css/animate.min.css">
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/app.css">
+
+</head>
+<body>
+  <div class="page-title animated fadeInDown">
+    <h4><a href="index.html">Team Maya - Quản lý cửa hàng băng đĩa</a></h4>
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
+      <li class="breadcrumb-item active">Quản lý CD</li>
+    </ol>
+  </div>
+
+  <div class="body animated fadeIn">
+    <div class="box">
+      <table>
+        <tbody>
+          <tr>
+            <td colspan="2">
+              <strong>Tên ca sử dụng:</strong>Quản lý CD
+            </td>
+            <td>
+              <strong>ID:</strong>1
+            </td>
+            <td>
+              <strong>Mức quan trọng:</strong>Cao
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="2">
+              <strong>Tác nhân chính:</strong>Quản trị viên
+            </td>
+            <td colspan="2">
+              <strong>Kiểu ca sử dụng:</strong>Chi tiết, quan trọng
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="4">
+              <strong>Các nhân tố và mối quan tâm:</strong>
+              <div>
+                Admin cần chỉnh sửa thông tin (thêm/sửa/xóa) CD hoặc cập nhật kho hàng.
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="4">
+              <strong>Mô tả ngắn gọn:</strong>Mô tả việc quản trị viên cập nhật sản phẩm.
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="4">
+              <strong>Kích hoạt:</strong>Quản trị viên cần cập nhật dữ liệu.
+              <br>
+              <strong>Kiểu:</strong>Ngoại
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="4">
+              <strong>Các mối quan hệ:</strong>
+              <br>
+              <ul>
+                <li>
+                  <strong>Liên quan:</strong>Quản trị viên
+                </li>
+                <li>
+                  <strong>Bao gồm:</strong>
+                </li>
+                <li>
+                  <strong>Mở rộng:</strong>Quản lý kho hàng
+                </li>
+                <li>
+                  <strong>Khái quát hóa:</strong>
+                </li>
+              </ul>
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="4">
+              <strong>Luồng sự kiện chính:</strong>
+              <ol>
+                <li>
+                  Quản trị viên truy cập vào giao diện quản lý sản phẩm.
+                </li>
+                <li>
+                  Quản trị viên chọn sản phẩm, sửa thông tin rồi tiến hành gửi xác nhận.
+                </li>
+                <li>
+                  Hệ thống tiếp nhận yêu cầu (thông tin sản phẩm, hành động: thêm/sửa/xóa)
+                </li>
+                <li>
+                  Tìm kiếm xác nhận sản phẩm
+                </li>
+                <li>
+                  Tiến hành xử lý yêu cầu.
+                </li>
+                <li>
+                  Kết thúc việc chỉnh sửa.
+                </li>
+              </ol>
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="4">
+              <strong>Luồng sự kiện con:</strong>
+              <div>
+                5a: Có thể cập nhật kho hàng nếu yêu cầu (gọi đến use-case Quản lý kho hàng)
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="4">
+              <strong>Luồng sự kiện tương đương/ngoại lệ:</strong>
+              <div>
+                4a: Có thể xảy ra lỗi, báo lỗi và kết thúc
+                <ol>
+                  <li>Tạo sản phẩm đã có</li>
+                  <li>Sửa/xóa sản phẩm không tồn tại</li>
+                </ol>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!-- END BOX -->
+
+    <div class="box mt-3">
+      <img src="../assets/manage_cd_sequence.jpg">
+    </div>
+
+    <div class="box mt-3">
+      <img src="../assets/manage_cd_state.jpg">
+    </div>
+  </div>
+  <!-- END BODY -->
+</body>
+</html>

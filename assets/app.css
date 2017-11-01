@@ -1,0 +1,99 @@
+html {
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  overflow-y: scroll;
+  width: 100vh;
+  min-height: 100vh;
+  margin: auto;
+  border: 1px solid #e0e0e0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+td {
+  padding: 1rem;
+}
+
+tr:not(:last-child) td {
+  border-bottom: 1px solid #ddd;
+}
+
+tr td:not(:last-child) {
+  border-right: 1px solid #ddd;
+}
+
+table tr:hover {
+  background-color: #eee;
+}
+
+table tr td {
+  width: 25%;
+}
+
+table tr td[colspan="2"] {
+  width: 50%;
+}
+
+strong {
+  padding-right: 5px;
+}
+
+h1 {
+  padding-top: 2rem;
+  text-align: center;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  margin: auto;
+}
+
+.page-title {
+  background-color: #fff;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #e3e4e5;
+}
+
+.page-title * {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+}
+
+.page-title h4 {
+  text-transform: uppercase;
+  margin-bottom: .5rem;
+}
+
+a {
+  color: #212529;
+}
+
+.breadcrumb {
+  background-color: #fff;
+}
+
+.box {
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  padding: 1rem;
+}
+
+.body {
+  padding: 1rem;
+}

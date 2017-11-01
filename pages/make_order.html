@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Maya - CD Store Management</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="../node_modules/animate.css/animate.min.css">
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/app.css">
+
+</head>
+<body>
+  <div class="page-title animated fadeInDown">
+    <h4><a href="index.html">Team Maya - Quản lý cửa hàng băng đĩa</a></h4>
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
+      <li class="breadcrumb-item active">Đặt hàng</li>
+    </ol>
+  </div>
+
+  <div class="body animated fadeIn">
+    <div class="box">
+      <table>
+        <tbody>
+          <tr>
+            <td colspan="2">
+              <strong>Tên ca sử dụng:</strong>Make Order
+            </td>
+            <td>
+              <strong>Mã ca sử dụng:</strong>1
+            </td>
+            <td>
+              <strong>Độ quan trọng:</strong>Cao
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="2">
+              <strong>Primary Actor:</strong>Online User
+            </td>
+            <td colspan="2">
+              <strong>Use case type:</strong>Chi tiết, quan trọng
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="4">
+              <strong>Stakeholders and Interests:</strong>
+              <div>
+                User có quyền đặt hàng, thay đổi đơn hàng.<br>
+                Admin tiếp nhận đơn hàng và thay đổi đơn hàng theo yêu cầu của User
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="4">
+              <strong>Brief Description:</strong>Use case mô tả việc khách hàng đặt hàng online
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="4">
+              <strong>Trigger:</strong>Người dùng (đã xác thực) thăm trang web, tiến hành mua hàng
+              <br>
+              <strong>Type:</strong>External
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="4">
+              <strong>Relationships:</strong>
+              <br>
+              <ul>
+                <li>
+                  <strong>Associations:</strong>User
+                </li>
+                <li>
+                  <strong>Include:</strong>Authenticate User, Cancel Order
+                </li>
+                <li>
+                  <strong>Extend:</strong>
+                </li>
+                <li>
+                  <strong>Generalization:</strong>
+                </li>
+              </ul>
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="4">
+              <strong>Normal Flow of Events:</strong>
+              <ol>
+                <li>
+                  User thăm trang web, thêm những CD ưa thích vào giỏ hàng
+                </li>
+                <li>
+                  User tiến hành đặt hàng (yêu cầu người dùng đăng nhập hệ thống - Authenticate User use case)
+                </li>
+                <li>
+                  User điền thông tin cá nhân
+                </li>
+                <li>
+                  User chọn các thông tin bổ sung (bắt buộc)
+                </li>
+                <li>
+                  Hệ thống sẽ tạo một hóa đơn tương ứng với đơn đặt hàng
+                </li>
+                <li>
+                  Kết thúc việc đặt hàng
+                </li>
+              </ol>
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="4">
+              <strong>Subflows:</strong>
+              <div>
+                4a: Thông tin bổ sung
+                <ol style="margin-bottom: 0;">
+                  <li>Cách thức vận chuyển</li>
+                  <li>Cách thức thanh toán</li>
+                </ol>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="4">
+              <strong>Alternate/exceptional Flows:</strong>
+              <div>
+                2a: Người dùng yêu cầu hệ thống cho lập tài khoản mới
+              </div>
+              <div>
+                6a: Người dùng có thể hủy đơn hàng trong thời gian cho phép
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>
