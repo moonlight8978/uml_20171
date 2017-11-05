@@ -14,7 +14,7 @@
     <ol class="breadcrumb">
       <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
       <li class="breadcrumb-item active">
-        Quản lý kho hàng
+        <!-- TODO Use case name -->
       </li>
     </ol>
   </div>
@@ -25,22 +25,22 @@
         <tbody>
           <tr>
             <td colspan="2">
-              <strong>Tên ca sử dụng:</strong>Quản lý kho hàng
+              <strong>Tên ca sử dụng:</strong>Hủy đơn hàng
             </td>
             <td>
-              <strong>ID:</strong>2
+              <strong>ID:</strong>5
             </td>
             <td>
-              <strong>Mức quan trọng:</strong>Cao
+              <strong>Mức quan trọng:</strong>Trung bình
             </td>
           </tr>
 
           <tr>
             <td colspan="2">
-              <strong>Tác nhân chính:</strong>Quản trị viên
+              <strong>Tác nhân chính:</strong>Người dùng online
             </td>
             <td colspan="2">
-              <strong>Kiểu ca sử dụng:</strong>Quan trọng, chi tiết
+              <strong>Kiểu ca sử dụng:</strong>Chi tiết, quan trọng
             </td>
           </tr>
 
@@ -48,23 +48,21 @@
             <td colspan="4">
               <strong>Các nhân tố và mối quan tâm:</strong>
               <div>
-                Nhà quản trị cập nhật kho hàng<br>
-                Xuất hóa đơn cho người dùng
+                Người dùng cần chọn hủy đơn hàng đã đặt
               </div>
             </td>
           </tr>
 
           <tr>
             <td colspan="4">
-              <strong>Mô tả ngắn gọn:</strong>Kho hàng được cập nhật khi nhập hàng, bán hàng
+              <strong>Mô tả ngắn gọn:</strong>Mô tả việc hủy đơn hàng của người dùng
             </td>
           </tr>
 
           <tr>
             <td colspan="4">
-              <strong>Kích hoạt:</strong>Quản trị viên, Người dùng đặt hàng
-              <br>
-              <strong>Kiểu:</strong>Ngoại
+              <strong>Kích hoạt:</strong>Người dùng xóa đơn hàng và quản trị viên cập nhật lại dữ liệu
+              <strong>Kiểu:</strong><!-- TODO -->
             </td>
           </tr>
 
@@ -74,10 +72,10 @@
               <br>
               <ul>
                 <li>
-                  <strong>Liên quan:</strong>Quản trị viên, Người dùng
+                  <strong>Liên quan:</strong>Người dùng online
                 </li>
                 <li>
-                  <strong>Bao gồm:</strong><!-- TODO -->
+                  <strong>Bao gồm:</strong>Bảo trì đơn hàng
                 </li>
                 <li>
                   <strong>Mở rộng:</strong><!-- TODO -->
@@ -93,17 +91,11 @@
             <td colspan="4">
               <strong>Luồng sự kiện chính:</strong>
               <ol>
-                <li>Tiếp nhận yêu cầu cập nhật kho hàng.</li>
-				<li>Tìm kiếm kho</li>
-                <li>
-                  Tiến hành cập nhật kho hàng với số lượng yêu cầu.
-                  <ul>
-                    <li>Quản trị viên thêm sản phẩm mới: S-1</li>
-                    <li>Nếu quản trị viên nhập thêm / xả bớt hàng: S-2</li>
-                    <li>Nếu người dùng đặt hàng, admin xuất hóa đơn: S-3</li>
-                  </ul>
-                </li>
-                <li>Phản hồi trạng thái.</li>
+                <li>Người dùng truy cập vào giỏ hàng</li>
+                <li>Người dùng tìm kiếm và xóa đơn hàng mà mình muốn hủy</li>
+				<li>Hệ thống tiếp nhận yêu cầu và xóa đơn hàng</li>
+				<li>Hệ thống gửi thông báo tới người dùng</li>
+				<li>Người dùng xác nhận hủy thành công và kết thúc sự kiện</li>
               </ol>
             </td>
           </tr>
@@ -112,20 +104,10 @@
             <td colspan="4">
               <strong>Luồng sự kiện con:</strong>
               <div>
-                S-1: Tạo kho mới
+                <!-- TODO -->
                 <ol>
-                  <li>Tạo kho cho sản phẩm tương ứng.</li>
-                  <li>Thiết lập các tham số mặc định.</li>
-                </ol>
-              </div>
-              <div class="">
-                S-2: Cập nhật kho cho 1 sản phẩm.
-              </div>
-              <div>
-                S-3: Cập nhật theo hóa đơn:
-                <ol>
-                  <li>Duyệt hóa đơn thu được mảng các sản phẩm kèm số lượng.</li>
-                  <li>Cập nhật từng sản phẩm.</li>
+                  <li><!-- TODO --></li>
+                  <li><!-- TODO --></li>
                 </ol>
               </div>
             </td>
@@ -135,15 +117,10 @@
             <td colspan="4">
               <strong>Luồng sự kiện tương đương/ngoại lệ:</strong>
               <div>
-                2a: Có thể xảy ra lỗi, hủy yêu cầu, báo lỗi.
+                <!-- TODO 5a xoạc -->
                 <ol>
-                  <li>Cập nhật kho hàng của một sản phẩm không tồn tại.</li>
-                </ol>
-              </div>
-              <div>
-                2a: Có thể xảy ra lỗi:
-                <ol>
-                  <li>Hết hàng.</li>
+                  <li><!-- TODO đầu tiên vét máng --></li>
+                  <li><!-- TODO sau đó đút --></li>
                 </ol>
               </div>
             </td>
@@ -154,11 +131,13 @@
     <!-- END BOX -->
 
     <div class="box mt-3">
-      <img src="../assets/manage_storage_sequence.jpg">
+      <!-- TODO sequence diagram image src -->
+      <img src="">
     </div>
 
     <div class="box mt-3">
-      <img src="../assets/manage_storage_state.jpg">
+      <!-- TODO state diagram image src -->
+      <img src="../assets/manage_cd_state.jpg">
     </div>
   </div>
   <!-- END BODY -->
