@@ -13,7 +13,7 @@
     <h4><a href="index.html">Team Maya - Quản lý cửa hàng băng đĩa</a></h4>
     <ol class="breadcrumb">
       <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
-      <li class="breadcrumb-item active">Đặt hàng</li>
+      <li class="breadcrumb-item active">Search CD</li>
     </ol>
   </div>
 
@@ -23,44 +23,43 @@
         <tbody>
           <tr>
             <td colspan="2">
-              <strong>Tên ca sử dụng:</strong>Make Order
+              <strong>Tên ca sử dụng:</strong>Search CD
             </td>
             <td>
-              <strong>Mã ca sử dụng:</strong>1
+              <strong>ID:</strong>1
             </td>
             <td>
-              <strong>Độ quan trọng:</strong>Cao
+              <strong>Mức quan trọng:</strong>Cao
             </td>
           </tr>
 
           <tr>
             <td colspan="2">
-              <strong>Tác nhân chính:</strong>Người dùng online
+              <strong>Tác nhân chính:</strong>Khách hàng Online
             </td>
             <td colspan="2">
-              <strong>Kiểu ca sử dụng</strong>Chi tiết, quan trọng
+              <strong>Kiểu ca sử dụng:</strong>Chi tiết, quan trọng
             </td>
           </tr>
 
           <tr>
             <td colspan="4">
-              <strong>Các nhân tố và mối quan tâm</strong>
+              <strong>Các nhân tố và mối quan tâm:</strong>
               <div>
-                User có quyền đặt hàng, thay đổi đơn hàng.<br>
-                Admin tiếp nhận đơn hàng và thay đổi đơn hàng theo yêu cầu của User
+                Khách hàng tìm kiếm sản phẩm theo nhu cầu 
               </div>
             </td>
           </tr>
 
           <tr>
             <td colspan="4">
-              <strong>Mô tả ngắn gọn:</strong>Use case mô tả việc khách hàng đặt hàng online
+              <strong>Mô tả ngắn gọn:</strong>Mô tả việc khách hàng tìm kiếm sản phẩm trên hệ thống
             </td>
           </tr>
 
           <tr>
             <td colspan="4">
-              <strong>Kích hoạt:</strong>Người dùng (đã xác thực) thăm trang web, tiến hành mua hàng
+              <strong>Kích hoạt:</strong>Khách hàng nhập sản phẩm cần tìm kiếm
               <br>
               <strong>Kiểu:</strong>Ngoại
             </td>
@@ -68,14 +67,14 @@
 
           <tr>
             <td colspan="4">
-              <strong> Các mối quan hệ:</strong>
+              <strong>Các mối quan hệ:</strong>
               <br>
               <ul>
                 <li>
                   <strong>Liên quan:</strong>Khách hàng
                 </li>
                 <li>
-                  <strong>Bao gồm</strong>Xác thực người dùng,Hủy đơn hàng
+                  <strong>Bao gồm:</strong>
                 </li>
                 <li>
                   <strong>Mở rộng:</strong>
@@ -89,63 +88,63 @@
 
           <tr>
             <td colspan="4">
-              <strong>Luồng sự kiện chính</strong>
+              <strong>Luồng sự kiện chính:</strong>
               <ol>
                 <li>
-                  User thăm trang web, thêm những CD ưa thích vào giỏ hàng
+                  
+                  Khách hàng truy cập vào mục tìm kiếm của hệ thống
+
                 </li>
                 <li>
-                  User tiến hành đặt hàng (yêu cầu người dùng đăng nhập hệ thống - Authenticate User use case)
+                  
+                  Khách hàng nhập vào form tìm kiếm 
                 </li>
                 <li>
-                  User điền thông tin cá nhân
+                
+                  Hệ thống sẽ tiếp nhận yêu cầu thông tin trong form tìm kiếm
                 </li>
                 <li>
-                  User chọn các thông tin bổ sung (bắt buộc)
+                  Tìm kiếm xác nhận sản phẩm và trả về kết quả ra giao diện cho khách hàng
                 </li>
-                <li>
-                  Hệ thống sẽ tạo một hóa đơn tương ứng với đơn đặt hàng
-                </li>
-                <li>
-                  Kết thúc việc đặt hàng
-                </li>
+               
               </ol>
             </td>
           </tr>
 
           <tr>
             <td colspan="4">
-              <strong>Luồng sự kiện con</strong>
+              <strong>Luồng sự kiện con:</strong>
               <div>
-                4a: Thông tin bổ sung
-                <ol style="margin-bottom: 0;">
-                  <li>Cách thức vận chuyển</li>
-                  <li>Cách thức thanh toán</li>
-                </ol>
+                2a: Người dùng có thể tìm kiếm theo tên sản phẩm, loại sản phẩm,giá,..
               </div>
             </td>
           </tr>
 
           <tr>
             <td colspan="4">
-              <strong>Luồng sự kiện tương đương,ngoại lệ:</strong>
+              <strong>Luồng sự kiện tương đương/ngoại lệ:</strong>
               <div>
-                2a: Người dùng yêu cầu hệ thống cho lập tài khoản mới
-              </div>
-              <div>
-                6a: Người dùng có thể hủy đơn hàng trong thời gian cho phép
+                2a: Có thể xảy ra lỗi, báo lỗi và kết thúc
+                <ol>
+                  
+                  <li>Sản phẩm không tồn tại trong hệ thống </li>
+                </ol>
               </div>
             </td>
           </tr>
         </tbody>
       </table>
     </div>
-  </div>
-  <div class="box mt-3">
-      <img src="../assets/make_order.jpg">
-    </div>
+    <!-- END BOX -->
+
     <div class="box mt-3">
-      <img src="../assets/make_order_state.jpg">
+      <img src="../assets/searchCD.jpg">
     </div>
+
+    <div class="box mt-3">
+      <img src="../assets/searchCD_state.jpg">
+    </div>
+  </div>
+  <!-- END BODY -->
 </body>
 </html>
