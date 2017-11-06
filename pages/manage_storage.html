@@ -48,8 +48,7 @@
             <td colspan="4">
               <strong>Các nhân tố và mối quan tâm:</strong>
               <div>
-                Nhà quản trị cập nhật kho hàng<br>
-                Xuất hóa đơn cho người dùng
+                Nhà quản trị cập nhật kho hàng
               </div>
             </td>
           </tr>
@@ -62,7 +61,7 @@
 
           <tr>
             <td colspan="4">
-              <strong>Kích hoạt:</strong>Quản trị viên, Người dùng đặt hàng
+              <strong>Kích hoạt:</strong>Quản trị viên
               <br>
               <strong>Kiểu:</strong>Ngoại
             </td>
@@ -74,7 +73,7 @@
               <br>
               <ul>
                 <li>
-                  <strong>Liên quan:</strong>Quản trị viên, Người dùng
+                  <strong>Liên quan:</strong>Quản trị viên
                 </li>
                 <li>
                   <strong>Bao gồm:</strong><!-- TODO -->
@@ -93,14 +92,14 @@
             <td colspan="4">
               <strong>Luồng sự kiện chính:</strong>
               <ol>
-                <li>Tiếp nhận yêu cầu cập nhật kho hàng.</li>
-				<li>Tìm kiếm kho</li>
+                <li>Quản trị viên gửi thông tin kho để tìm kiếm.</li>
+				        <li>Tìm kiếm kho.</li>
                 <li>
                   Tiến hành cập nhật kho hàng với số lượng yêu cầu.
                   <ul>
-                    <li>Quản trị viên thêm sản phẩm mới: S-1</li>
+                    <li>Quản trị viên thêm kho hàng cho CD: S-1</li>
                     <li>Nếu quản trị viên nhập thêm / xả bớt hàng: S-2</li>
-                    <li>Nếu người dùng đặt hàng, admin xuất hóa đơn: S-3</li>
+                    <li>Quản trị xóa kho hàng</li>
                   </ul>
                 </li>
                 <li>Phản hồi trạng thái.</li>
@@ -112,20 +111,17 @@
             <td colspan="4">
               <strong>Luồng sự kiện con:</strong>
               <div>
-                S-1: Tạo kho mới
+                S-1: Tạo kho cho CD.
                 <ol>
                   <li>Tạo kho cho sản phẩm tương ứng.</li>
                   <li>Thiết lập các tham số mặc định.</li>
                 </ol>
               </div>
               <div class="">
-                S-2: Cập nhật kho cho 1 sản phẩm.
-              </div>
-              <div>
-                S-3: Cập nhật theo hóa đơn:
+                S-2: Cập nhật kho cho 1 CD.
                 <ol>
-                  <li>Duyệt hóa đơn thu được mảng các sản phẩm kèm số lượng.</li>
-                  <li>Cập nhật từng sản phẩm.</li>
+                  <li>Số hàng nhập thêm, cộng dồn vào tổng số lượng.</li>
+                  <li>Số hàng đã bán, cộng dồn vào trường số lượng đã bán.</li>
                 </ol>
               </div>
             </td>
@@ -137,13 +133,7 @@
               <div>
                 2a: Có thể xảy ra lỗi, hủy yêu cầu, báo lỗi.
                 <ol>
-                  <li>Cập nhật kho hàng của một sản phẩm không tồn tại.</li>
-                </ol>
-              </div>
-              <div>
-                2a: Có thể xảy ra lỗi:
-                <ol>
-                  <li>Hết hàng.</li>
+                  <li>Không tìm thấy kho hàng ứng với CD.</li>
                 </ol>
               </div>
             </td>
@@ -152,6 +142,78 @@
       </table>
     </div>
     <!-- END BOX -->
+
+    <div class="box mt-3">
+      <strong>Mặt trước</strong>
+      <table>
+        <tbody>
+          <tr>
+            <td colspan="2">
+              <strong>Tên lớp:</strong>
+              KhoHàng
+            </td>
+            <td colspan="1">
+              <strong>ID:</strong>
+              1
+            </td>
+            <td colspan="1">
+              <strong>Loại:</strong>
+              Cụ thể
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3">
+              <strong>Mô tả:</strong>
+              Kho hàng chứa thông tin về số lượng sản phẩm của cửa hàng.
+            </td>
+            <td colspan="1">
+              <strong>Ca sử dụng liên quan:</strong>
+              Quản lý kho hàng
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <strong>Trách nhiệm:</strong>
+              <ul>
+                <li>Tìm kiếm</li>
+                <li>Cập nhật</li>
+                <li>Tạo mới</li>
+                <li>Xóa kho</li>
+                <li>Báo lỗi</li>
+              </ul>
+            </td>
+            <td colspan="2">
+              <strong>Đối tác:</strong>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <strong>Mặt sau:</strong>
+      <table>
+        <tbody>
+          <tr>
+            <td>
+              <strong>Các thuộc tính:</strong>
+              <ul>
+                <li>Tổng số lượng</li>
+                <li>Số lượng đã bán</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <strong>Mối quan hệ:</strong>
+              <ul>
+                <li>Khái quát hóa: <!-- TODO --></li>
+                <li>Tổ hợp: <!-- TODO --></li>
+                <li>Các mối quan hệ khác: <!-- TODO --></li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 
     <div class="box mt-3">
       <img src="../assets/manage_storage_sequence.jpg">

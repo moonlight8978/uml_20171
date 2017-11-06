@@ -46,7 +46,7 @@
             <td colspan="4">
               <strong>Các nhân tố và mối quan tâm:</strong>
               <div>
-                Admin cần chỉnh sửa thông tin (thêm/sửa/xóa) CD hoặc cập nhật kho hàng.
+                Quản trị viên cần cập nhật thông tin CD.
               </div>
             </td>
           </tr>
@@ -100,7 +100,7 @@
                   Hệ thống tiếp nhận yêu cầu (thông tin sản phẩm, hành động: thêm/sửa/xóa)
                 </li>
                 <li>
-                  Tìm kiếm xác nhận sản phẩm
+                  Tìm kiếm CD
                 </li>
                 <li>
                   Tiến hành xử lý yêu cầu.
@@ -116,7 +116,12 @@
             <td colspan="4">
               <strong>Luồng sự kiện con:</strong>
               <div>
-                5a: Có thể cập nhật kho hàng nếu yêu cầu (gọi đến use-case Quản lý kho hàng)
+                5a: Cập nhật CD
+                <ol>
+                  <li>Thêm mới sản phẩm. Gọi use case Quản lý kho hàng để thêm kho mới cho CD</li>
+                  <li>Sửa sản phẩm.</li>
+                  <li>Xóa sản phẩm. Gọi đến use case Quản lý kho hàng để xóa kho.</li>
+                </ol>
               </div>
             </td>
           </tr>
@@ -137,6 +142,81 @@
       </table>
     </div>
     <!-- END BOX -->
+
+    <div class="box mt-3">
+      <strong>Mặt trước</strong>
+      <table>
+        <tbody>
+          <tr>
+            <td colspan="2">
+              <strong>Tên lớp:</strong>
+              CD
+            </td>
+            <td colspan="1">
+              <strong>ID:</strong>
+              2
+            </td>
+            <td colspan="1">
+              <strong>Loại:</strong>
+              Cụ thể
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3">
+              <strong>Mô tả:</strong>
+              Lưu thông tin về CD.
+            </td>
+            <td colspan="1">
+              <strong>Ca sử dụng liên quan:</strong>
+              Quản lý CD.
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <strong>Trách nhiệm:</strong>
+              <ul>
+                <li>Thêm</li>
+                <li>Sửa</li>
+                <li>Xóa</li>
+                <li>Tìm kiếm</li>
+              </ul>
+            </td>
+            <td colspan="2">
+              <strong>Đối tác:</strong>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <strong>Mặt sau:</strong>
+      <table>
+        <tbody>
+          <tr>
+            <td>
+              <strong>Các thuộc tính:</strong>
+              <ul>
+                <li>Tên</li>
+                <li>Mô tả</li>
+                <li>Thể loại</li>
+                <li>Giảm giá</li>
+                <li>Giá</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <strong>Mối quan hệ:</strong>
+              <ul>
+                <li>Khái quát hóa: <!-- TODO --></li>
+                <li>Tổ hợp: <!-- TODO --></li>
+                <li>Các mối quan hệ khác: <!-- TODO --></li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!-- END CRC -->
 
     <div class="box mt-3">
       <img src="../assets/manage_cd_sequence.jpg">
