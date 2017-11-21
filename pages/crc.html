@@ -21,6 +21,235 @@
 
   <div class="body animated fadeIn">
     <div class="box">
+      <strong>Danh sách CRC Card</strong>
+      <ul>
+        <li><a href="#cd">1. CD</a></li>
+        <li><a href="#cdList">2. Danh Sách CD</a></li>
+        <li><a href="#storage">3. Kho Hàng</a></li>
+      </ul>
+    </div>
+
+    <div class="box mt-3" id="cd">
+      <strong>Mặt trước</strong>
+      <table>
+        <tbody>
+          <tr>
+            <td colspan="2">
+              <strong>Tên lớp:</strong>
+              CD
+            </td>
+            <td colspan="1">
+              <strong>ID:</strong>
+              1
+            </td>
+            <td colspan="1">
+              <strong>Loại:</strong>
+              Cụ thể
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3">
+              <strong>Mô tả:</strong>
+              Lưu thông tin về CD.
+            </td>
+            <td colspan="1">
+              <strong>Ca sử dụng liên quan:</strong>
+              1
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <strong>Trách nhiệm:</strong>
+              <ul>
+                <li>Tạo mới một CD</li>
+                <li>Sửa một CD</li>
+                <li>Xóa một CD</li>
+              </ul>
+            </td>
+            <td colspan="2">
+              <strong>Đối tác:</strong>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <strong>Mặt sau:</strong>
+      <table>
+        <tbody>
+          <tr>
+            <td>
+              <strong>Các thuộc tính:</strong>
+              <ul>
+                <li>Tên</li>
+                <li>Mô tả</li>
+                <li>Thể loại</li>
+                <li>Giảm giá</li>
+                <li>Giá</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <strong>Mối quan hệ:</strong>
+              <ul>
+                <li>Khái quát hóa: <!-- TODO --></li>
+                <li>Tổ hợp: </li>
+                <li>Các mối quan hệ khác: (Hợp thành) Danh Sách CD</li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!-- END CRC -->
+
+    <div class="box mt-3" id="cdList">
+      <strong>Mặt trước</strong>
+      <table>
+        <tbody>
+          <tr>
+            <td colspan="2">
+              <strong>Tên lớp:</strong>
+              Danh sách CD
+            </td>
+            <td colspan="1">
+              <strong>ID:</strong>
+              2
+            </td>
+            <td colspan="1">
+              <strong>Loại:</strong>
+              Cụ thể
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3">
+              <strong>Mô tả:</strong>
+              Danh sách các CD.
+            </td>
+            <td colspan="1">
+              <strong>Ca sử dụng liên quan:</strong>
+              Quản lý CD.
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <strong>Trách nhiệm:</strong>
+              <ul>
+                <li>Tạo mới một CD</li>
+                <li>Sửa một CD</li>
+                <li>Xóa một CD</li>
+              </ul>
+            </td>
+            <td colspan="2">
+              <strong>Đối tác:</strong>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <strong>Mặt sau:</strong>
+      <table>
+        <tbody>
+          <tr>
+            <td>
+              <strong>Các thuộc tính:</strong>
+              <ul>
+                <li>Tên</li>
+                <li>Mô tả</li>
+                <li>Thể loại</li>
+                <li>Giảm giá</li>
+                <li>Giá</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <strong>Mối quan hệ:</strong>
+              <ul>
+                <li>Khái quát hóa: <!-- TODO --></li>
+                <li>Tổ hợp: <!-- TODO --></li>
+                <li>Các mối quan hệ khác: <!-- TODO --></li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!-- END CRC -->
+
+    <div class="box mt-3" id="storage">
+      <strong>Mặt trước</strong>
+      <table>
+        <tbody>
+          <tr>
+            <td colspan="2">
+              <strong>Tên lớp:</strong>
+              Kho Hàng
+            </td>
+            <td colspan="1">
+              <strong>ID:</strong>
+              1
+            </td>
+            <td colspan="1">
+              <strong>Loại:</strong>
+              Cụ thể
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3">
+              <strong>Mô tả:</strong>
+              Kho hàng chứa thông tin về số lượng sản phẩm của cửa hàng.
+            </td>
+            <td colspan="1">
+              <strong>Ca sử dụng liên quan:</strong>
+              Quản lý kho hàng
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <strong>Trách nhiệm:</strong>
+              <ul>
+                <li>Tìm kiếm</li>
+                <li>Cập nhật</li>
+                <li>Tạo mới</li>
+                <li>Xóa kho</li>
+                <li>Báo lỗi</li>
+              </ul>
+            </td>
+            <td colspan="2">
+              <strong>Đối tác:</strong>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <strong>Mặt sau:</strong>
+      <table>
+        <tbody>
+          <tr>
+            <td>
+              <strong>Các thuộc tính:</strong>
+              <ul>
+                <li>Tổng số lượng</li>
+                <li>Số lượng đã bán</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <strong>Mối quan hệ:</strong>
+              <ul>
+                <li>Khái quát hóa: <!-- TODO --></li>
+                <li>Tổ hợp: <!-- TODO --></li>
+                <li>Các mối quan hệ khác: <!-- TODO --></li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="box">
       <strong>Mặt trước</strong>
       <table>
         <tbody>
