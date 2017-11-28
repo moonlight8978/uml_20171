@@ -18,7 +18,22 @@
   </div>
 
   <div class="body animated fadeIn">
-    <div class="box">
+    <div class="crc-list">
+      <span>CRC:</span>
+
+      <a href="crc/cd.html">CD</a>
+      <span>/</span>
+
+      <a href="crc/cd_list.html">Danh sách CD</a>
+      <span>/</span>
+
+      <a href="crc/storage.html">Kho hàng</a>
+      <span>/</span>
+
+      <a href="crc/admin.html">Quản trị viên</a>
+    </div>
+
+    <div class="box mt-3">
       <img src="../assets/manage_cd_class.jpg">
     </div>
 
@@ -98,19 +113,15 @@
                   Quản trị viên truy cập vào giao diện quản lý sản phẩm.
                 </li>
                 <li>
-                  Quản trị viên chọn sản phẩm, sửa thông tin rồi tiến hành gửi xác nhận.
+                  Quản trị viên chọn một sản phẩm trong danh sách, tiến hành 1 trong 3 thao tác
+                  <ul>
+                    <li>Thêm CD mới: S1</li>
+                    <li>Sửa 1 CD.</li>
+                    <li>Xóa 1 CD: S2</li>
+                  </ul>
                 </li>
                 <li>
-                  Hệ thống tiếp nhận yêu cầu (thông tin sản phẩm, hành động: thêm/sửa/xóa)
-                </li>
-                <li>
-                  Tìm kiếm CD
-                </li>
-                <li>
-                  Tiến hành xử lý yêu cầu.
-                </li>
-                <li>
-                  Kết thúc việc chỉnh sửa.
+                  Kết thúc việc quản lý.
                 </li>
               </ol>
             </td>
@@ -120,11 +131,18 @@
             <td colspan="4">
               <strong>Luồng sự kiện con:</strong>
               <div>
-                5a: Cập nhật CD
+                S1: Thêm CD
                 <ol>
-                  <li>Thêm mới sản phẩm. Gọi use case Quản lý kho hàng để thêm kho mới cho CD</li>
-                  <li>Sửa sản phẩm.</li>
-                  <li>Xóa sản phẩm. Gọi đến use case Quản lý kho hàng để xóa kho.</li>
+                  <li>Tìm kiếm sản phẩm để kiểm tra trùng lặp.</li>
+                  <li>Nếu trùng, kết thúc việc thêm.</li>
+                  <li>Thêm sản phẩm.</li>
+                </ol>
+              </div>
+              <div>
+                S2: Xóa CD
+                <ol>
+                  <li>Xóa CD theo ID nhận được.</li>
+                  <li>Xóa kho tương ứng.</li>
                 </ol>
               </div>
             </td>
@@ -134,11 +152,7 @@
             <td colspan="4">
               <strong>Luồng sự kiện tương đương/ngoại lệ:</strong>
               <div>
-                4a: Có thể xảy ra lỗi, báo lỗi và kết thúc
-                <ol>
-                  <li>Tạo sản phẩm đã có</li>
-                  <li>Sửa/xóa sản phẩm không tồn tại</li>
-                </ol>
+                2a: Quản trị viên có thể thực hiện lặp đi lặp lại bước 2
               </div>
             </td>
           </tr>
@@ -151,9 +165,9 @@
       <img src="../assets/manage_cd_sequence.jpg">
     </div>
 
-    <div class="box mt-3">
+    <!-- <div class="box mt-3">
       <img src="../assets/manage_cd_state.jpg">
-    </div>
+    </div> -->
 
     <div class="mt-3">
       <span>&#x21A9;</span>

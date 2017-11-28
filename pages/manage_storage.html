@@ -20,6 +20,22 @@
   </div>
 
   <div class="body animated fadeIn">
+    <!-- TODO Danh sách thẻ CRC -->
+    <div class="crc-list">
+      <span>CRC:</span>
+
+      <a href="crc/cd.html">CD</a>
+      <span>/</span>
+
+      <a href="crc/storage.html">Kho Hàng</a>
+      <span>/</span>
+
+      <a href="crc/storage_list.html">Danh sách kho hàng</a>
+      <span>/</span>
+
+      <a href="crc/admin.html">Quản trị viên</a>
+    </div>
+
     <div class="box">
       <!-- TODO class diagram image src -->
       <img src="../assets/manage_storage_class.jpg">
@@ -97,17 +113,15 @@
             <td colspan="4">
               <strong>Luồng sự kiện chính:</strong>
               <ol>
-                <li>Quản trị viên gửi thông tin kho để tìm kiếm.</li>
-				        <li>Tìm kiếm kho.</li>
-                <li>
-                  Tiến hành cập nhật kho hàng với số lượng yêu cầu.
+                <li>Quản trị viên truy cập vào giao diện quản lý kho hàng.</li>
+				        <li>
+                  Quản trị viên chọn một kho hàng rồi tiến hành 1 thao tác
                   <ul>
-                    <li>Quản trị viên thêm kho hàng cho CD: S-1</li>
-                    <li>Nếu quản trị viên nhập thêm / xả bớt hàng: S-2</li>
-                    <li>Quản trị xóa kho hàng</li>
+                    <li>Tạo kho: S1</li>
+                    <li>Sửa kho: S2</li>
                   </ul>
                 </li>
-                <li>Phản hồi trạng thái.</li>
+                <li>Kết thúc việc quản lý.</li>
               </ol>
             </td>
           </tr>
@@ -116,14 +130,15 @@
             <td colspan="4">
               <strong>Luồng sự kiện con:</strong>
               <div>
-                S-1: Tạo kho cho CD.
+                S-1: Tạo kho.
                 <ol>
-                  <li>Tạo kho cho sản phẩm tương ứng.</li>
-                  <li>Thiết lập các tham số mặc định.</li>
+                  <li>Kiểm tra sản phẩm tương ứng đã có kho hay chưa</li>
+                  <li>Đã có thì kết thúc.</li>
+                  <li>Tạo kho.</li>
                 </ol>
               </div>
               <div class="">
-                S-2: Cập nhật kho cho 1 CD.
+                S-2: Sửa kho.
                 <ol>
                   <li>Số hàng nhập thêm, cộng dồn vào tổng số lượng.</li>
                   <li>Số hàng đã bán, cộng dồn vào trường số lượng đã bán.</li>
@@ -136,10 +151,7 @@
             <td colspan="4">
               <strong>Luồng sự kiện tương đương/ngoại lệ:</strong>
               <div>
-                2a: Có thể xảy ra lỗi, hủy yêu cầu, báo lỗi.
-                <ol>
-                  <li>Không tìm thấy kho hàng ứng với CD.</li>
-                </ol>
+                2a: Quản trị viên có thể lặp đi lặp lại bước 2
               </div>
             </td>
           </tr>
@@ -152,9 +164,9 @@
       <img src="../assets/manage_storage_sequence.jpg">
     </div>
 
-    <div class="box mt-3">
+    <!-- <div class="box mt-3">
       <img src="../assets/manage_storage_state.jpg">
-    </div>
+    </div> -->
 
     <div class="mt-3">
       <span>&#x21A9;</span>

@@ -1,0 +1,5 @@
+CRC ID:
+Bich 1~10
+Bang: 11~20
+Huy: 21~30
+Thang: 31~40
