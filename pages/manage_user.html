@@ -14,7 +14,7 @@
     <ol class="breadcrumb">
       <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
       <li class="breadcrumb-item active">
-        <!-- TODO Use case name -->
+        Quản lý người dùng
       </li>
     </ol>
   </div>
@@ -24,21 +24,23 @@
     <div class="crc-list">
       <span>CRC:</span>
 
-      <a href="crc/.html"><!-- TODO --></a>
+      <a href="crc/user.html">Người dùng</a>
       <span>/</span>
 
-      <a href="crc/.html"><!-- TODO --></a>
+      <a href="crc/user_list.html">Danh sách người dùng</a>
       <span>/</span>
 
-      <a href="crc/.html"><!-- TODO --></a>
+      <a href="crc/admin.html">Quản trị viên</a>
       <span>/</span>
 
-      <a href="crc/.html"><!-- TODO --></a>
+      <a href="crc/order.html">Đơn đặt hàng</a>
+      <span>/</span>
+
+      <a href="crc/order_list.html">Danh sách đơn đặt hàng</a>
     </div>
 
     <div class="box mt-3">
-      <!-- TODO class diagram image src -->
-      <img src="">
+      <img src="../assets/manage_user_class.jpg">
     </div>
 
     <div class="box mt-3">
@@ -46,22 +48,22 @@
         <tbody>
           <tr>
             <td colspan="2">
-              <strong>Tên ca sử dụng:</strong><!-- TODO -->
+              <strong>Tên ca sử dụng:</strong>Quản lý người dùng
             </td>
             <td>
-              <strong>ID:</strong><!-- TODO -->
+              <strong>ID:</strong>12
             </td>
             <td>
-              <strong>Mức quan trọng:</strong><!-- TODO -->
+              <strong>Mức quan trọng:</strong>Cao
             </td>
           </tr>
 
           <tr>
             <td colspan="2">
-              <strong>Tác nhân chính:</strong><!-- TODO -->
+              <strong>Tác nhân chính:</strong>Quản trị viên
             </td>
             <td colspan="2">
-              <strong>Kiểu ca sử dụng:</strong><!-- TODO -->
+              <strong>Kiểu ca sử dụng:</strong>Cụ thể, chi tiết
             </td>
           </tr>
 
@@ -69,22 +71,22 @@
             <td colspan="4">
               <strong>Các nhân tố và mối quan tâm:</strong>
               <div>
-                <!-- TODO -->
+                Quản trị viên, Người dùng
               </div>
             </td>
           </tr>
 
           <tr>
             <td colspan="4">
-              <strong>Mô tả ngắn gọn:</strong><!-- TODO -->
+              <strong>Mô tả ngắn gọn:</strong>Quản trị viên quản lý người dùng hệ thống.
             </td>
           </tr>
 
           <tr>
             <td colspan="4">
-              <strong>Kích hoạt:</strong><!-- TODO -->
+              <strong>Kích hoạt:</strong>Quản trị viên
               <br>
-              <strong>Kiểu:</strong><!-- TODO -->
+              <strong>Kiểu:</strong>Ngoại
             </td>
           </tr>
 
@@ -113,8 +115,17 @@
             <td colspan="4">
               <strong>Luồng sự kiện chính:</strong>
               <ol>
-                <li><!-- TODO --></li>
-                <li><!-- TODO --></li>
+                <li>Quản trị viên truy cập vào giao diện quản lý người dùng.</li>
+                <li>Quản trị viên chọn người dùng.</li>
+                <li>
+                  Quản trị viên thực hiện một thao tác
+                  <ul>
+                    <li>Thêm người dùng mới: S1</li>
+                    <li>Xóa người dùng</li>
+                    <li>Xem lịch sử mua hàng của người dùng: S2</li>
+                  </ul>
+                </li>
+                <li>Kết thúc quản lý</li>
               </ol>
             </td>
           </tr>
@@ -123,10 +134,17 @@
             <td colspan="4">
               <strong>Luồng sự kiện con:</strong>
               <div>
-                <!-- TODO -->
+                S1: Thêm người dùng mới
                 <ol>
-                  <li><!-- TODO --></li>
-                  <li><!-- TODO --></li>
+                  <li>Kiểm tra trùng lặp</li>
+                  <li>Thêm người dùng</li>
+                </ol>
+              </div>
+              <div>
+                S2: Xem lịch sử mua hàng 
+                <ol>
+                  <li>Liệt kê danh sách đơn đặt hàng của người dùng</li>
+                  <li>Tính tổng số tiền bằng cách duyệt danh sách</li>
                 </ol>
               </div>
             </td>
@@ -136,11 +154,7 @@
             <td colspan="4">
               <strong>Luồng sự kiện tương đương/ngoại lệ:</strong>
               <div>
-                <!-- TODO -->
-                <ol>
-                  <li><!-- TODO --></li>
-                  <li><!-- TODO --></li>
-                </ol>
+                Quản trị viên có thể lặp lại bước 2, 3
               </div>
             </td>
           </tr>
@@ -150,13 +164,7 @@
     <!-- END Description -->
 
     <div class="box mt-3">
-      <!-- TODO sequence diagram image src -->
-      <img src="">
-    </div>
-
-    <div class="box mt-3">
-      <!-- TODO state diagram image src -->
-      <img src="../assets/manage_cd_state.jpg">
+      <img src="../assets/manage_user_sequence.jpg">
     </div>
 
     <div class="mt-3">
