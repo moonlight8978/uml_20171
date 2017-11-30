@@ -14,7 +14,7 @@
     <ol class="breadcrumb">
       <li class="breadcrumb-item"><a href="../index.html">Trang chủ</a></li>
       <li class="breadcrumb-item active">
-        Hợp đồng <!-- TODO contract name -->
+        Hợp đồng Tạo mới CD
       </li>
     </ol>
   </div>
@@ -26,51 +26,59 @@
           <tr>
             <td colspan="2">
               <strong>Tên phương thức:</strong>
-              <!-- TODO -->
+              Tạo mới()
             </td>
             <td>
               <strong>Tên lớp:</strong>
-              <!-- TODO -->
+              CD
             </td>
             <td>
               <strong>ID:</strong>
-              <!-- TODO -->
+              1
             </td>
           </tr>
           <tr>
             <td colspan="4">
               <strong>Bên gửi:</strong>
-              <!-- TODO -->
+              Quản trị viên
             </td>
           </tr>
           <tr>
             <td colspan="4">
               <strong>Ca sử dụng liên quan:</strong>
-              <!-- TODO -->
+              Quản lý CD
             </td>
           </tr>
           <tr>
             <td colspan="4">
               <strong>Mô tả trách nhiệm:</strong>
-              <!-- TODO -->
+              Thực hiện thêm mới 1 CD vào hệ thống
             </td>
           </tr>
           <tr>
             <td colspan="4">
               <strong>Tham số nhận:</strong>
-              <!-- TODO -->
+              <ul>
+                <li>ID CD: (Integer) là duy nhất</li>
+                <li>Tên CD: (String)</li>
+                <li>Mô tả: (Text)</li>
+                <li>Giảm giá: (Float) nhận giá trị từ 0.00 ~ 1.00</li>
+                <li>Giá: (Integer)</li>
+                <li>Thể loại: (String)</li>
+              </ul>
             </td>
           </tr>
           <tr>
             <td colspan="4">
               <strong>Kiểu dữ liệu trả về:</strong>
-              <!-- TODO -->
+              CD (cd vừa tạo)
             </td>
           </tr>
           <tr>
             <td colspan="4">
-              <strong>Tiền điều kiện:</strong>
-              <!-- TODO -->
+              <strong>Tiền điều kiện:</strong><br>
+              Các trường Tên CD, ID CD, Giá CD, Thể loại không được trống.<br>
+              ID CD là duy nhất
             </td>
           </tr>
           <tr>
