@@ -14133,35 +14133,6 @@
 														},
 														{
 															"_type": "UMLAttributeView",
-															"_id": "AAAAAAFgD80wkgHY23E=",
-															"_parent": {
-																"$ref": "AAAAAAFgD80wYAGP7TY="
-															},
-															"model": {
-																"$ref": "AAAAAAFgD8wmxDWDit4="
-															},
-															"visible": true,
-															"enabled": true,
-															"lineColor": "#000000",
-															"fillColor": "#ffffff",
-															"fontColor": "#000000",
-															"font": "Arial;13;0",
-															"showShadow": true,
-															"containerChangeable": false,
-															"containerExtending": false,
-															"left": 594,
-															"top": 354,
-															"width": 61.79443359375,
-															"height": 13,
-															"autoResize": false,
-															"underline": false,
-															"text": "+thể loại",
-															"horizontalAlignment": 0,
-															"verticalAlignment": 5,
-															"wordWrap": false
-														},
-														{
-															"_type": "UMLAttributeView",
 															"_id": "AAAAAAFgD80wkgHbfGU=",
 															"_parent": {
 																"$ref": "AAAAAAFgD80wYAGP7TY="
@@ -14179,7 +14150,7 @@
 															"containerChangeable": false,
 															"containerExtending": false,
 															"left": 594,
-															"top": 369,
+															"top": 354,
 															"width": 61.79443359375,
 															"height": 13,
 															"autoResize": false,
@@ -14208,12 +14179,12 @@
 															"containerChangeable": false,
 															"containerExtending": false,
 															"left": 594,
-															"top": 384,
+															"top": 369,
 															"width": 61.79443359375,
 															"height": 13,
 															"autoResize": false,
 															"underline": false,
-															"text": "+giá",
+															"text": "+giá trị",
 															"horizontalAlignment": 0,
 															"verticalAlignment": 5,
 															"wordWrap": false
@@ -14237,7 +14208,7 @@
 															"containerChangeable": false,
 															"containerExtending": false,
 															"left": 594,
-															"top": 399,
+															"top": 384,
 															"width": 61.79443359375,
 															"height": 13,
 															"autoResize": false,
@@ -14260,7 +14231,7 @@
 													"left": 589,
 													"top": 334,
 													"width": 71.79443359375,
-													"height": 83,
+													"height": 68,
 													"autoResize": false
 												},
 												{
@@ -14282,7 +14253,7 @@
 													"containerChangeable": false,
 													"containerExtending": false,
 													"left": 589,
-													"top": 417,
+													"top": 402,
 													"width": 71.79443359375,
 													"height": 10,
 													"autoResize": false
@@ -15475,24 +15446,6 @@
 										},
 										{
 											"_type": "UMLAttribute",
-											"_id": "AAAAAAFgD8wmxDWDit4=",
-											"_parent": {
-												"$ref": "AAAAAAFgD8wmxDV7Uvk="
-											},
-											"name": "thể loại",
-											"visibility": "public",
-											"isStatic": false,
-											"isLeaf": false,
-											"type": "",
-											"isReadOnly": false,
-											"isOrdered": false,
-											"isUnique": false,
-											"isDerived": false,
-											"aggregation": "none",
-											"isID": false
-										},
-										{
-											"_type": "UMLAttribute",
 											"_id": "AAAAAAFgD8wmxDWEOrs=",
 											"_parent": {
 												"$ref": "AAAAAAFgD8wmxDV7Uvk="
@@ -15515,11 +15468,10 @@
 											"_parent": {
 												"$ref": "AAAAAAFgD8wmxDV7Uvk="
 											},
-											"name": "giá",
+											"name": "giá trị",
 											"visibility": "public",
 											"isStatic": false,
 											"isLeaf": false,
-											"type": "",
 											"isReadOnly": false,
 											"isOrdered": false,
 											"isUnique": false,
@@ -16459,35 +16411,6 @@
 														},
 														{
 															"_type": "UMLAttributeView",
-															"_id": "AAAAAAFgAcn0RugaTe8=",
-															"_parent": {
-																"$ref": "AAAAAAFgAcn0GOf3zNs="
-															},
-															"model": {
-																"$ref": "AAAAAAFgAcdbyYdGNVo="
-															},
-															"visible": true,
-															"enabled": true,
-															"lineColor": "#000000",
-															"fillColor": "#ffffff",
-															"fontColor": "#000000",
-															"font": "Arial;13;0",
-															"showShadow": true,
-															"containerChangeable": false,
-															"containerExtending": false,
-															"left": 541,
-															"top": 333,
-															"width": 88.130859375,
-															"height": 13,
-															"autoResize": false,
-															"underline": false,
-															"text": "+thể loại",
-															"horizontalAlignment": 0,
-															"verticalAlignment": 5,
-															"wordWrap": false
-														},
-														{
-															"_type": "UMLAttributeView",
 															"_id": "AAAAAAFgAcn0Rugdjgg=",
 															"_parent": {
 																"$ref": "AAAAAAFgAcn0GOf3zNs="
@@ -16505,7 +16428,7 @@
 															"containerChangeable": false,
 															"containerExtending": false,
 															"left": 541,
-															"top": 348,
+															"top": 333,
 															"width": 88.130859375,
 															"height": 13,
 															"autoResize": false,
@@ -16534,12 +16457,12 @@
 															"containerChangeable": false,
 															"containerExtending": false,
 															"left": 541,
-															"top": 363,
+															"top": 348,
 															"width": 88.130859375,
 															"height": 13,
 															"autoResize": false,
 															"underline": false,
-															"text": "+giá",
+															"text": "+giá trị",
 															"horizontalAlignment": 0,
 															"verticalAlignment": 5,
 															"wordWrap": false
@@ -16563,7 +16486,7 @@
 															"containerChangeable": false,
 															"containerExtending": false,
 															"left": 541,
-															"top": 378,
+															"top": 363,
 															"width": 88.130859375,
 															"height": 13,
 															"autoResize": false,
@@ -16586,7 +16509,7 @@
 													"left": 536,
 													"top": 313,
 													"width": 98.130859375,
-													"height": 83,
+													"height": 68,
 													"autoResize": false
 												},
 												{
@@ -16608,7 +16531,7 @@
 													"containerChangeable": false,
 													"containerExtending": false,
 													"left": 536,
-													"top": 396,
+													"top": 381,
 													"width": 98.130859375,
 													"height": 10,
 													"autoResize": false
@@ -17846,24 +17769,6 @@
 										},
 										{
 											"_type": "UMLAttribute",
-											"_id": "AAAAAAFgAcdbyYdGNVo=",
-											"_parent": {
-												"$ref": "AAAAAAFgAcdbyYdBSuY="
-											},
-											"name": "thể loại",
-											"visibility": "public",
-											"isStatic": false,
-											"isLeaf": false,
-											"type": "",
-											"isReadOnly": false,
-											"isOrdered": false,
-											"isUnique": false,
-											"isDerived": false,
-											"aggregation": "none",
-											"isID": false
-										},
-										{
-											"_type": "UMLAttribute",
 											"_id": "AAAAAAFgAcdbyYdHN1E=",
 											"_parent": {
 												"$ref": "AAAAAAFgAcdbyYdBSuY="
@@ -17886,11 +17791,10 @@
 											"_parent": {
 												"$ref": "AAAAAAFgAcdbyYdBSuY="
 											},
-											"name": "giá",
+											"name": "giá trị",
 											"visibility": "public",
 											"isStatic": false,
 											"isLeaf": false,
-											"type": "",
 											"isReadOnly": false,
 											"isOrdered": false,
 											"isUnique": false,
@@ -17908,6 +17812,7 @@
 											"visibility": "public",
 											"isStatic": false,
 											"isLeaf": false,
+											"type": "",
 											"isReadOnly": false,
 											"isOrdered": false,
 											"isUnique": false,
@@ -19221,35 +19126,6 @@
 														},
 														{
 															"_type": "UMLAttributeView",
-															"_id": "AAAAAAFgD8zMCQFqmMs=",
-															"_parent": {
-																"$ref": "AAAAAAFgD8zLyQFEOdk="
-															},
-															"model": {
-																"$ref": "AAAAAAFgD8xI/zWPPJo="
-															},
-															"visible": true,
-															"enabled": true,
-															"lineColor": "#000000",
-															"fillColor": "#ffffff",
-															"fontColor": "#000000",
-															"font": "Arial;13;0",
-															"showShadow": true,
-															"containerChangeable": false,
-															"containerExtending": false,
-															"left": 572,
-															"top": 289,
-															"width": 61.79443359375,
-															"height": 13,
-															"autoResize": false,
-															"underline": false,
-															"text": "+thể loại",
-															"horizontalAlignment": 0,
-															"verticalAlignment": 5,
-															"wordWrap": false
-														},
-														{
-															"_type": "UMLAttributeView",
 															"_id": "AAAAAAFgD8zMCgFt7pc=",
 															"_parent": {
 																"$ref": "AAAAAAFgD8zLyQFEOdk="
@@ -19267,7 +19143,7 @@
 															"containerChangeable": false,
 															"containerExtending": false,
 															"left": 572,
-															"top": 304,
+															"top": 289,
 															"width": 61.79443359375,
 															"height": 13,
 															"autoResize": false,
@@ -19296,12 +19172,12 @@
 															"containerChangeable": false,
 															"containerExtending": false,
 															"left": 572,
-															"top": 319,
+															"top": 304,
 															"width": 61.79443359375,
 															"height": 13,
 															"autoResize": false,
 															"underline": false,
-															"text": "+giá",
+															"text": "+giá trị",
 															"horizontalAlignment": 0,
 															"verticalAlignment": 5,
 															"wordWrap": false
@@ -19325,7 +19201,7 @@
 															"containerChangeable": false,
 															"containerExtending": false,
 															"left": 572,
-															"top": 334,
+															"top": 319,
 															"width": 61.79443359375,
 															"height": 13,
 															"autoResize": false,
@@ -19348,7 +19224,7 @@
 													"left": 567,
 													"top": 269,
 													"width": 71.79443359375,
-													"height": 83,
+													"height": 68,
 													"autoResize": false
 												},
 												{
@@ -19370,7 +19246,7 @@
 													"containerChangeable": false,
 													"containerExtending": false,
 													"left": 567,
-													"top": 352,
+													"top": 337,
 													"width": 71.79443359375,
 													"height": 10,
 													"autoResize": false
@@ -20413,24 +20289,6 @@
 										},
 										{
 											"_type": "UMLAttribute",
-											"_id": "AAAAAAFgD8xI/zWPPJo=",
-											"_parent": {
-												"$ref": "AAAAAAFgD8xI/zWH1Wk="
-											},
-											"name": "thể loại",
-											"visibility": "public",
-											"isStatic": false,
-											"isLeaf": false,
-											"type": "",
-											"isReadOnly": false,
-											"isOrdered": false,
-											"isUnique": false,
-											"isDerived": false,
-											"aggregation": "none",
-											"isID": false
-										},
-										{
-											"_type": "UMLAttribute",
 											"_id": "AAAAAAFgD8xJADWQuoM=",
 											"_parent": {
 												"$ref": "AAAAAAFgD8xI/zWH1Wk="
@@ -20453,11 +20311,10 @@
 											"_parent": {
 												"$ref": "AAAAAAFgD8xI/zWH1Wk="
 											},
-											"name": "giá",
+											"name": "giá trị",
 											"visibility": "public",
 											"isStatic": false,
 											"isLeaf": false,
-											"type": "",
 											"isReadOnly": false,
 											"isOrdered": false,
 											"isUnique": false,
