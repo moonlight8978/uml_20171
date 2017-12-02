@@ -13,20 +13,45 @@
     <h4><a href="index.html">Team Maya - Quản lý cửa hàng băng đĩa</a></h4>
     <ol class="breadcrumb">
       <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
-      <li class="breadcrumb-item active">Đặt hàng</li>
+      <li class="breadcrumb-item active">
+        Đặt hàng
+      </li>
     </ol>
   </div>
 
   <div class="body animated fadeIn">
+    <!-- TODO Danh sách thẻ CRC -->
+    <div class="crc-list">
+      <span>CRC:</span>
+
+      <a href="crc/cd.html">CD</a>
+      <span>/</span>
+
+      <a href="crc/cart.html">Giỏ hàng</a>
+      <span>/</span>
+
+      <a href="crc/invoices.html">Đơn hàng</a>
+      <span>/</span>
+      <a href="crc/invoices_detail.html">Chi tiết đơn</a>
+      <span>/</span>
+      <a href="crc/user.html">Người dùng</a>
+    </div>
+
     <div class="box">
+      <!-- TODO class diagram image src -->
+      <img src="../assets/ClassDiagramMakeOrder.jpg">
+    </div>
+
+
+    <div class="box mt-3">
       <table>
         <tbody>
           <tr>
             <td colspan="2">
-              <strong>Tên ca sử dụng:</strong>Make Order
+              <strong>Tên ca sử dụng:</strong>Đặt hàng
             </td>
             <td>
-              <strong>Mã ca sử dụng:</strong>1
+              <strong>Mã ca sử dụng:</strong>3
             </td>
             <td>
               <strong>Độ quan trọng:</strong>Cao
@@ -54,7 +79,7 @@
 
           <tr>
             <td colspan="4">
-              <strong>Mô tả ngắn gọn:</strong>Use case mô tả việc khách hàng đặt hàng online
+              <strong>Mô tả ngắn gọn:</strong>Usecase mô tả việc khách hàng đặt hàng online
             </td>
           </tr>
 
@@ -92,19 +117,19 @@
               <strong>Luồng sự kiện chính</strong>
               <ol>
                 <li>
-                  User thăm trang web, thêm những CD ưa thích vào giỏ hàng
+                  Người dùng thăm trang web, thêm những CD ưa thích vào giỏ hàng
                 </li>
                 <li>
-                  User tiến hành đặt hàng (yêu cầu người dùng đăng nhập hệ thống - Authenticate User use case)
+                  Người dùng tiến hành đặt hàng (yêu cầu người dùng đăng nhập hệ thống - Authenticate User use case)
                 </li>
                 <li>
-                  User điền thông tin cá nhân
+                  Người dùng  điền thông tin để nhận hàng
                 </li>
                 <li>
-                  User chọn các thông tin bổ sung (bắt buộc)
+                  Người dùng chọn các thông tin bổ sung (bắt buộc)
                 </li>
                 <li>
-                  Hệ thống sẽ tạo một hóa đơn tương ứng với đơn đặt hàng
+                  Hệ thống sẽ xác thực người dùng và lưu đơn hàng
                 </li>
                 <li>
                   Kết thúc việc đặt hàng
@@ -142,10 +167,9 @@
     </div>
   </div>
   <div class="box mt-3">
-      <img src="../assets/make_order.jpg">
+      <img src="../assets/make_order_sequence.jpg">
     </div>
-    <div class="box mt-3">
-      <img src="../assets/make_order_state.jpg">
-    </div>
+   
 </body>
 </html>
+ -->
