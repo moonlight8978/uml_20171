@@ -114,11 +114,13 @@
               <strong>Luồng sự kiện chính:</strong>
               <ol>
                 <li>Quản trị viên truy cập vào giao diện quản lý kho hàng.</li>
+                <li>Hệ thống đưa ra danh sách kho sản phẩm.</li>
 				        <li>
-                  Quản trị viên chọn một kho hàng rồi tiến hành 1 thao tác
+                  Quản trị viên tiến hành 1 thao tác
                   <ul>
-                    <li>Tạo kho: S1</li>
-                    <li>Sửa kho: S2</li>
+                    <li>Quản trị viên tạo kho mới cho sản phẩm.</li>
+                    <li>Quản trị viên chọn 1 kho, tiến hành sửa.</li>
+                    <li>Quản trị viên chọn 1 kho và xóa.</li>
                   </ul>
                 </li>
                 <li>Kết thúc việc quản lý.</li>
@@ -129,21 +131,6 @@
           <tr>
             <td colspan="4">
               <strong>Luồng sự kiện con:</strong>
-              <div>
-                S-1: Tạo kho.
-                <ol>
-                  <li>Kiểm tra sản phẩm tương ứng đã có kho hay chưa</li>
-                  <li>Đã có thì kết thúc.</li>
-                  <li>Tạo kho.</li>
-                </ol>
-              </div>
-              <div class="">
-                S-2: Sửa kho.
-                <ol>
-                  <li>Số hàng nhập thêm, cộng dồn vào tổng số lượng.</li>
-                  <li>Số hàng đã bán, cộng dồn vào trường số lượng đã bán.</li>
-                </ol>
-              </div>
             </td>
           </tr>
 

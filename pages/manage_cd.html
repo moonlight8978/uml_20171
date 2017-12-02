@@ -109,15 +109,14 @@
             <td colspan="4">
               <strong>Luồng sự kiện chính:</strong>
               <ol>
+                <li>Quản trị viên truy cập vào giao diện quản lý CD.</li>
+                <li>Hệ thống đưa ra danh sách CD.</li>
                 <li>
-                  Quản trị viên truy cập vào giao diện quản lý sản phẩm.
-                </li>
-                <li>
-                  Quản trị viên chọn một sản phẩm trong danh sách, tiến hành 1 trong 3 thao tác
+                  Quản trị viên tiến hành 1 trong 3 thao tác
                   <ul>
                     <li>Thêm CD mới: S1</li>
-                    <li>Sửa 1 CD.</li>
-                    <li>Xóa 1 CD: S2</li>
+                    <li>Sửa 1 CD: S2</li>
+                    <li>Xóa 1 CD: S3</li>
                   </ul>
                 </li>
                 <li>
@@ -133,16 +132,27 @@
               <div>
                 S1: Thêm CD
                 <ol>
+                  <li>Quản trị viên nhập thông tin CD.</li>
                   <li>Tìm kiếm sản phẩm để kiểm tra trùng lặp.</li>
                   <li>Nếu trùng, kết thúc việc thêm.</li>
                   <li>Thêm sản phẩm.</li>
+                  <li>Gọi đến ca sử dụng Quản lý kho để thêm kho hàng.</li>
                 </ol>
               </div>
               <div>
-                S2: Xóa CD
+                S2: Sửa CD
                 <ol>
-                  <li>Xóa CD theo ID nhận được.</li>
-                  <li>Xóa kho tương ứng.</li>
+                  <li>Quản trị viên chọn CD.</li>
+                  <li>Quản trị nhập thông tin mới.</li>
+                  <li>Sửa CD.</li>
+                </ol>
+              </div>
+              <div>
+                S3: Xóa CD
+                <ol>
+                  <li>Quản trị viên chọn một CD xóa.</li>
+                  <li>Xóa CD.</li>
+                  <li>Gọi đến ca sử dụng Quản lý kho hàng để xóa kho tương ứng.</li>
                 </ol>
               </div>
             </td>
