@@ -21,16 +21,134 @@
 
   <div class="body animated fadeIn">
     <div class="box">
-      <strong>Kịch bản 1</strong>
-      <div>
-        <!-- TODO -->
+      <strong>Kiểm thử lớp Form CD</strong>
+      <div class="row">
+        <div class="col-4">
+          nhập form({<br>
+            &emsp; tên: " "<br>
+            &emsp; id: 1<br>
+            &emsp; giảm giá: 0<br>
+            &emsp; giá: 200,000<br>
+            &emsp; thể loại: Phim<br>
+          })<br>
+          kiểm tra()<br>
+          => <strong>mong đợi</strong>: tên không hợp lệ<br>
+        </div>
+
+        <div class="col-4">
+          nhập form({<br>
+            &emsp; tên: "Kawamura Maya (Full HD Uncensored)"<br>
+            &emsp; id: 1<br>
+            &emsp; giảm giá: 0<br>
+            &emsp; giá: -200,000<br>
+          })<br>
+          kiểm tra()<br>
+          => <strong>mong đợi</strong>: giá không hợp lệ, thiếu thể loại<br>
+        </div>
+
+        <div class="col-4">
+          nhập form({<br>
+            &emsp; tên: "Cô dâu 8 tuổi"<br>
+            &emsp; id: 1<br>
+            &emsp; giảm giá: 0<br>
+            &emsp; giá: 200,000<br>
+            &emsp; thể loại: Phim<br>
+          })<br>
+          kiểm tra()<br>
+          => <strong>mong đợi</strong>: hợp lệ<br>
+        </div>
       </div>
     </div>
 
     <div class="box">
-      <strong>Kịch bản 2</strong>
+      <strong>Kiểm thử lớp CD</strong>
+      <div class="row">
+        <div class="col-4">
+          xóa({<br>
+            &emsp; id: -1<br>
+          })<br>
+          => <strong>mong đợi</strong>: NULL<br>
+        </div>
+
+        <div class="col-4">
+          xóa({<br>
+            &emsp; id: 2<br>
+          })<br>
+          => <strong>mong đợi</strong>: CD (id = 2)<br>
+        </div>
+      </div>
+    </div>
+
+    <div class="box">
+      <strong>Kiểm thử quá trình tạo CD</strong>
       <div>
-        <!-- TODO -->
+        Giả sử hệ thống có sẵn
+        <ul>
+          <li>CD: id = 1, tên: "AAA", thể loại: Phim, giá: 100,000, giảm giá: 0, kho: kho1</li>
+          <li>CD: id = 2, tên: "BBB", thể loại: Phim, giá: 100,000, giảm giá: 0, kho: kho2</li>
+        </ul>
+        <div class="row">
+          <div class="col-4">
+            FormCD.nhập_form({<br>
+              &emsp; id: 2<br>
+              &emsp; tên: "CCC"<br>
+              &emsp; giảm giá: 0<br>
+              &emsp; giá: 200,000<br>
+              &emsp; thể loại: Phim<br>
+            })<br>
+            FormCD.kiểm_tra()<br>
+            => <strong>mong đợi</strong>: hợp lệ<br>
+            DanhSáchCD.tìm_kiếm(id = 2)<br>
+            => <strong>mong đợi</strong>: đã tồn tại<br>
+            => <strong>mong đợi</strong>: quá trình thêm thất bại<br>
+          </div>
+
+          <div class="col-4">
+            FormCD.nhập_form({<br>
+              &emsp; id: 3<br>
+              &emsp; tên: "CCC"<br>
+              &emsp; giảm giá: 0<br>
+              &emsp; giá: 200,000<br>
+              &emsp; thể loại: Phim<br>
+            })<br>
+            FormCD.kiểm_tra()<br>
+            => <strong>mong đợi</strong>: hợp lệ<br>
+            DanhSáchCD.tìm_kiếm(id = 2)<br>
+            => <strong>mong đợi</strong>: không tìm thấy<br>
+            CD.thêm({ ... })<br>
+            => <strong>mong đợi</strong>: CD ({ ... })<br>
+            FormKhoHàng.nhập_form({<br>
+              &emsp; số lượng: -5<br>
+            })<br>
+            FormKhoHàng.kiểm_tra <br>
+            => <strong>mong đợi</strong>: số lượng không hợp lệ<br>
+            => <strong>mong đợi</strong>: quá trình thêm thất bại<br>
+          </div>
+
+          <div class="col-4">
+            FormCD.nhập_form({<br>
+              &emsp; id: 3<br>
+              &emsp; tên: "CCC"<br>
+              &emsp; giảm giá: 0<br>
+              &emsp; giá: 200,000<br>
+              &emsp; thể loại: Phim<br>
+            })<br>
+            FormCD.kiểm_tra()<br>
+            => <strong>mong đợi</strong>: hợp lệ<br>
+            DanhSáchCD.tìm_kiếm(id = 2)<br>
+            => <strong>mong đợi</strong>: không tìm thấy<br>
+            CD.thêm({ ... })<br>
+            => <strong>mong đợi</strong>: CD ({ ... })<br>
+            FormKhoHàng.nhập_form({<br>
+              &emsp; số lượng: 10<br>
+            })<br>
+            FormKhoHàng.kiểm_tra <br>
+            => <strong>mong đợi</strong>: form hợp lệ<br>
+            KhoHàng.thêm({ ... })<br>
+            => <strong>mong đợi</strong>: Kho CD (tổng số = 5, đã bán = 0)<br>
+            => <strong>mong đợi</strong>: quá trình thêm thành công<br>
+          </div>
+        </div>
       </div>
     </div>
 
