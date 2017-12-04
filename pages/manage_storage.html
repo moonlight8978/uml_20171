@@ -27,6 +27,9 @@
       <a href="crc/cd.html">CD</a>
       <span>/</span>
 
+      <a href="crc/form_storage.html">Form Kho hàng</a>
+      <span>/</span>
+
       <a href="crc/storage.html">Kho Hàng</a>
       <span>/</span>
 
@@ -118,8 +121,8 @@
 				        <li>
                   Quản trị viên tiến hành 1 thao tác
                   <ul>
-                    <li>Quản trị viên tạo kho mới cho sản phẩm.</li>
-                    <li>Quản trị viên chọn 1 kho, tiến hành sửa.</li>
+                    <li>Tạo kho hàng cho sản phẩm: S1</li>
+                    <li>Cập nhật kho hàng: S2</li>
                     <li>Quản trị viên chọn 1 kho và xóa.</li>
                   </ul>
                 </li>
@@ -131,6 +134,24 @@
           <tr>
             <td colspan="4">
               <strong>Luồng sự kiện con:</strong>
+              <div>
+                S1: Tạo kho hàng
+                <ol>
+                  <li>Quản trị viên nhập số lượng hàng.</li>
+                  <li>Quản trị viên xác nhận.</li>
+                  <li>Hệ thống kiểm tra dữ liệu nhập.</li>
+                  <li>Hệ thống tạo kho.</li>
+                </ol>
+              </div>
+              <div>
+                S2: Sửa kho hàng
+                <ol>
+                  <li>Quản trị viên nhập số lượng hàng.</li>
+                  <li>Quản trị viên xác nhận.</li>
+                  <li>Hệ thống kiểm tra dữ liệu nhập.</li>
+                  <li>Hệ thống sửa kho. (số lượng sẽ được cộng dồn vào tổng số lượng)</li>
+                </ol>
+              </div>
             </td>
           </tr>
 
