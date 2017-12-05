@@ -126,7 +126,9 @@
             <td colspan="4">
               <strong>Mô tả thuật toán:</strong><br>
               <code>if (name, descr, id, discount, price, type != NULL)</code><br>
-              <code class="ml-4">cd = CD.create(name, descr, id, discount, price, type)</code><br>
+              <code class="ml-4">throw :abort if (dsCD.tìm_kiếm(id).size > 0)</code><br>
+              <br>
+              <code class="ml-4">cd = CD.thêm(name, descr, id, discount, price, type)</code><br>
               <code class="ml-4">return cd</code><br>
               <code>else</code><br>
               <code class="ml-4">throw :abort</code><br>
