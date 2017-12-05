@@ -39,7 +39,7 @@
 
     <div class="box">
       <!-- TODO class diagram image src -->
-      <img src="../assets/ClassDiagramMakeOrder.jpg">
+      <img src="../assets/make_order_class.jpg">
     </div>
 
 
@@ -71,8 +71,8 @@
             <td colspan="4">
               <strong>Các nhân tố và mối quan tâm</strong>
               <div>
-                User có quyền đặt hàng, thay đổi đơn hàng.<br>
-                Admin tiếp nhận đơn hàng và thay đổi đơn hàng theo yêu cầu của User
+                Người dùng có quyền đặt hàng, thay đổi đơn hàng.<br>
+                Quản trị viên tiếp nhận đơn hàng và thay đổi đơn hàng theo yêu cầu của người dùng
               </div>
             </td>
           </tr>
@@ -117,22 +117,22 @@
               <strong>Luồng sự kiện chính</strong>
               <ol>
                 <li>
-                  Người dùng thăm trang web, thêm những CD ưa thích vào giỏ hàng
+                  Người dùng thăm trang web chọn những sản phẩm cẩn mua
                 </li>
                 <li>
-                  Người dùng tiến hành đặt hàng (yêu cầu người dùng đăng nhập hệ thống - Authenticate User use case)
+                  Thêm sản phẩm vào giỏ hàng
                 </li>
                 <li>
-                  Người dùng  điền thông tin để nhận hàng
+                  Người dùng  tiến hành đặt hàng 
                 </li>
                 <li>
-                  Người dùng chọn các thông tin bổ sung (bắt buộc)
+                  Hệ thống sẽ tiến hành kiểm tra đăng nhập của người dùng
                 </li>
                 <li>
-                  Hệ thống sẽ xác thực người dùng và lưu đơn hàng
+                  Người dùng sẽ nhập các thông tin cá nhân để nhận hàng
                 </li>
                 <li>
-                  Kết thúc việc đặt hàng
+                  Hệ thống sẽ lưu đơn hàng và thông báo kết quả cho người dùng
                 </li>
               </ol>
             </td>
@@ -142,7 +142,7 @@
             <td colspan="4">
               <strong>Luồng sự kiện con</strong>
               <div>
-                4a: Thông tin bổ sung
+                5a: Thông tin bổ sung
                 <ol style="margin-bottom: 0;">
                   <li>Cách thức vận chuyển</li>
                   <li>Cách thức thanh toán</li>
@@ -155,7 +155,7 @@
             <td colspan="4">
               <strong>Luồng sự kiện tương đương,ngoại lệ:</strong>
               <div>
-                2a: Người dùng yêu cầu hệ thống cho lập tài khoản mới
+                4a: Người dùng yêu cầu hệ thống cho lập tài khoản mới
               </div>
               <div>
                 6a: Người dùng có thể hủy đơn hàng trong thời gian cho phép

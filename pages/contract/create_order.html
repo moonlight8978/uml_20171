@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Maya - CD Store Management</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="../../node_modules/animate.css/animate.min.css">
+  <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../assets/app.css">
+
+</head>
+<body>
+  <div class="page-title animated fadeInDown">
+    <h4><a href="../index.html">Team Maya - Quản lý cửa hàng băng đĩa</a></h4>
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="../index.html">Trang chủ</a></li>
+      <li class="breadcrumb-item active">
+        Hợp đồng Tạo Đơn Hàng 
+      </li>
+    </ol>
+  </div>
+
+  <div class="body animated fadeIn">
+    <div class="box">
+      <table>
+        <tbody>
+          <tr>
+            <td colspan="2">
+              <strong>Tên phương thức:</strong>
+              Tạo Đơn Hàng()
+            </td>
+            <td>
+              <strong>Tên lớp:</strong>
+              Đơn Hàng
+            </td>
+            <td>
+              <strong>ID:</strong>
+              11
+            </td>
+          </tr>
+          <tr>
+            <td colspan="4">
+              <strong>Bên gửi:</strong>
+              Khách Hàng
+            </td>
+          </tr>
+          <tr>
+            <td colspan="4">
+              <strong>Ca sử dụng liên quan:</strong>
+              Đặt Hàng
+            </td>
+          </tr>
+          <tr>
+            <td colspan="4">
+              <strong>Mô tả trách nhiệm:</strong>
+              Thực hiện việc tạo mới một đơn hàng
+            </td>
+          </tr>
+          <tr>
+            <td colspan="4">
+              <strong>Tham số nhận:</strong>
+              <ul>
+                <li>ID : (Integer) là duy nhất</li>
+                <li>Họtên KH: (String)</li>
+                <li>Địa chỉ: (Text)</li>
+                <li>Số điện thoại: (String)</li>
+                <li>Thời gian đặt hàng: (Datetime)</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="4">
+              <strong>Kiểu dữ liệu trả về:</strong>
+              Đơn hàng vừa tạo
+            </td>
+          </tr>
+          <tr>
+            <td colspan="4">
+              <strong>Tiền điều kiện:</strong><br>
+              Các trường Họtên KH,Địa chỉ,Số điện thoại không được trống.<br>
+              ID  là duy nhất
+            </td>
+          </tr>
+          <tr>
+            <td colspan="4">
+              <strong>Hậu điều kiện:</strong>
+              <!-- TODO -->
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  <!-- END BODY -->
+</body>
+</html>
