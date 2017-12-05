@@ -34060,7 +34060,7 @@
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
-											"text": "Đơn đặt hàng",
+											"text": "Đơn hàng",
 											"horizontalAlignment": 2,
 											"verticalAlignment": 5,
 											"wordWrap": false
@@ -35034,7 +35034,7 @@
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
-											"text": "Danh sách đơn đặt hàng",
+											"text": "Danh sách đơn hàng",
 											"horizontalAlignment": 2,
 											"verticalAlignment": 5,
 											"wordWrap": false
@@ -37686,7 +37686,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFf3wmJO1F3iSY="
 					},
-					"name": "Đơn đặt hàng",
+					"name": "Đơn hàng",
 					"ownedElements": [
 						{
 							"_type": "UMLAssociation",
@@ -37908,7 +37908,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFf3wmJO1F3iSY="
 					},
-					"name": "Danh sách đơn đặt hàng",
+					"name": "Danh sách đơn hàng",
 					"ownedElements": [
 						{
 							"_type": "UMLAssociation",
